@@ -193,7 +193,7 @@ async def on_command_error(ctx, error):
     try:
         await request_points(ctx)
     except Exception as e:
-        print("Some shit happened: " + str(error))
+        print(str(error))
         print("Error from try catch : " + str(e))
     
     
